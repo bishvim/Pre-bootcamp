@@ -1,0 +1,33 @@
+
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+
+  // to find the smaller number
+
+var hey = userInput[0].split(" ");
+var a = parseInt(hey[0]);
+var b = parseInt(hey[1]);
+if (a>b)
+{
+    console.log('number '+ b+' is a smaller number')
+}else
+{
+    console.log('number '+ a+' is a smaller number')
+}
+
+
+//end-here
+});
+	
+	
