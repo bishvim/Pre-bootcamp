@@ -1,0 +1,27 @@
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  
+  //Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+var hey = userInput[0].split(" ");
+var a = (hey[0]);
+var b = (hey[1]);
+var c = (hey[2]);
+var d = (hey[3]);
+var e = parseInt(hey[4]);
+console.log(' First Name:   '+a+"\n",'Last Name:  '+b+"\n",'Martial Status:    '+c+"\n", 'Country:   ' +d+"\n", 'Age:  '+e)
+
+
+//end-here
+});
