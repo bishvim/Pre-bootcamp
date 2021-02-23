@@ -11,8 +11,8 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
-  //start-here
-  //Your code goes here … replace the below line with your code logic 
+  
+  //Declare four variables without assigning values and print them in console
 
 var hey = userInput[0].split(" ");
 var a = parseInt(hey[0]);
